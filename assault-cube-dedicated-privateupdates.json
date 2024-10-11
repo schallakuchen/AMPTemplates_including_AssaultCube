@@ -14,10 +14,9 @@
         "UpdateStageName": "Extract files from the installer",
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "ExtractArchive",
-        "UpdateSourceArgs": "AssaultCube_v1.3.0.2_LockdownEdition.exe",
-        "UpdateSourceTarget": "./server/AssaultCube_v1.3.0.2_LockdownEdition/serverfiles/",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
+        "UpdateSourceData": "AssaultCube_v1.3.0.2_LockdownEdition.exe",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true,
         "OneShot": false
     }
