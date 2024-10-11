@@ -5,7 +5,32 @@
         "UpdateSource": "GithubRelease",
         "UpdateSourceData": "AssaultCube_v1.3.0.2_LockdownEdition.exe",
         "UpdateSourceArgs": "assaultcube/AC",
-        "UnzipUpdateSource": true,
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": true,
+	"OneShot": false
+    },
+    {
+    	"UpdateStageName": "Test cmd command",
+	"UpdateSourcePlatform": "Windows",
+	"UpdateSource": "Executable",
+	"UpdateSourceData": "cmd.exe",
+	"UpdateSourceArgs": "/C ipconfig > test1.txt",
+	"SkipOnFailure":false
+    },
+    {
+    	"UpdateStageName": "Rename installer to make it extractable",
+	"UpdateSourcePlatform": "Windows",
+	"UpdateSource": "Executable",
+	"UpdateSourceData": "cmd.exe",
+	"UpdateSourceArgs": "/C move assault-cube-dedicated-private\\AssaultCube_v1.3.0.2_LockdownEdition.exe assault-cube-dedicated-private\\AssaultCube_v1.3.0.2_LockdownEdition.exe.zip",
+	"SkipOnFailure":false
+    },
+    {
+        "UpdateStageName": "Extract files from the installer",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "ExtractArchive",
+        "UpdateSourceData": "assault-cube-dedicated-private\\AssaultCube_v1.3.0.2_LockdownEdition.exe.zip",
+        "UpdateSourceTarget": "assault-cube-dedicated-private\\gamedata}",
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true,
         "OneShot": false
@@ -15,7 +40,7 @@
 	"UpdateSourcePlatform": "Windows",
 	"UpdateSource": "Executable",
 	"UpdateSourceData": "cmd.exe",
-	"UpdateSourceArgs": "/C ipconfig > test.txt",
+	"UpdateSourceArgs": "/C ipconfig > test2.txt",
 	"SkipOnFailure":false
     }
 ]
