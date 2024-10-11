@@ -13,6 +13,7 @@ Meta.EndpointURIFormat=steam://connect/{ip}:{GenericModule.App.Ports.$SteamQuery
 App.AdminMethod=STDIO
 App.HasReadableConsole=true
 App.HasWritableConsole=false
+Meta.AppConfigId=31213330-971c-4538-aebb-6abb44c3d9d3
 App.DisplayName=Assault Cube Dedicated Private
 App.CommandLineArgs={{$PlatformArgs}} {{$FormattedArgs}}
 App.WindowsCommandLineArgs=-Cconfig/servercmdline.txt %1 %2 %3 %4 %5
