@@ -11,10 +11,18 @@
         "OneShot": false
     },
     {
+    	"UpdateStageName": "Rename installer to make it extractable",
+	"UpdateSourcePlatform": "Windows",
+	"UpdateSource": "Executable",
+	"UpdateSourceData": "cmd.exe",
+	"UpdateSourceArgs": "/C move {{$FullBaseDir}}\\AssaultCube_v1.3.0.2_LockdownEdition.exe {{$FullBaseDir}}AssaultCube_v1.3.0.2_LockdownEdition.exe.zip > NUL 2>&1",
+	"SkipOnFailure":false
+    },
+    {
         "UpdateStageName": "Extract files from the installer",
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "ExtractArchive",
-        "UpdateSourceData": "AssaultCube_v1.3.0.2_LockdownEdition.exe",
+        "UpdateSourceData": "AssaultCube_v1.3.0.2_LockdownEdition.exe.zip",
         "UpdateSourceTarget": "{{$FullBaseDir}}",
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true,
