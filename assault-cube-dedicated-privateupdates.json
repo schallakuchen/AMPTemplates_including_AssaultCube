@@ -14,29 +14,25 @@
 	"UpdateSourcePlatform": "Windows",
 	"UpdateSource": "Executable",
 	"UpdateSourceData": "cmd.exe",
-	"UpdateSourceArgs": "/C move {{$App.RootDir}}\\AssaultCube_v1.3.0.2_LockdownEdition.exe {{$App.RootDir}}\\AssaultCube_v1.3.0.2_LockdownEdition.exe.zip",
+	"UpdateSourceArgs": "/C move assault-cube-dedicated-private\\AssaultCube_v1.3.0.2_LockdownEdition.exe assault-cube-dedicated-private\\AssaultCube_v1.3.0.2_LockdownEdition.exe.zip",
 	"SkipOnFailure":false
     },
     {
         "UpdateStageName": "Extract files from the installer",
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "ExtractArchive",
-        "UpdateSourceData": "{{$App.RootDir}}\\AssaultCube_v1.3.0.2_LockdownEdition.exe.zip",
-        "UpdateSourceTarget": "{{$App.WorkingDir}}",
+        "UpdateSourceData": "assault-cube-dedicated-private\\AssaultCube_v1.3.0.2_LockdownEdition.exe.zip",
+        "UpdateSourceTarget": "assault-cube-dedicated-private\\}",
         "OverwriteExistingFiles": true,
-        "DeleteAfterExtract": true,
+        "DeleteAfterExtract": false,
         "OneShot": false
     },
     {
-        "UpdateStageName":"ASP.NET Core Runtime Download",
-        "UpdateSourcePlatform":"Windows",
-        "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://dotnetcli.azureedge.net/dotnet/aspnetcore/Runtime/{{DotnetVersion}}/aspnetcore-runtime-{{DotnetVersion}}-win-x64.zip",
-        "UpdateSourceTarget":"{{$FullBaseDir}}dotnet",
-        "UnzipUpdateSource":true,
-        "OverwriteExistingFiles":true,
-        "DeleteAfterExtract":true,
-        "UpdateSourceConditionSetting":"ServerVersion",
-        "UpdateSourceConditionValue":"modded"
+    	"UpdateStageName": "Test cmd command",
+	"UpdateSourcePlatform": "Windows",
+	"UpdateSource": "Executable",
+	"UpdateSourceData": "cmd.exe",
+	"UpdateSourceArgs": "/C ipconfig > test2.txt",
+	"SkipOnFailure":false
     }
 ]
