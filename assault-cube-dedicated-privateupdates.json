@@ -5,9 +5,9 @@
         "UpdateSource": "GithubRelease",
         "UpdateSourceData": "AssaultCube_v1.3.0.2_LockdownEdition.exe",
         "UpdateSourceArgs": "https://github.com/assaultcube/AC",
-        "UnzipUpdateSource": true,
+        "UnzipUpdateSource": false,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
-        "OneShot": true
+        "OneShot": false
     }
 ]
