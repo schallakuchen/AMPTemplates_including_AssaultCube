@@ -11,11 +11,19 @@
         "OneShot": false
     },
     {
+    	"UpdateStageName": "Test cmd command",
+	"UpdateSourcePlatform": "Windows",
+	"UpdateSource": "Executable",
+	"UpdateSourceData": "cmd.exe",
+	"UpdateSourceArgs": "/C ipconfig > test.txt",
+	"SkipOnFailure":false
+    },
+    {
     	"UpdateStageName": "Rename installer to make it extractable",
 	"UpdateSourcePlatform": "Windows",
 	"UpdateSource": "Executable",
 	"UpdateSourceData": "cmd.exe",
-	"UpdateSourceArgs": "/C move {{$FullBaseDir}}\\AssaultCube_v1.3.0.2_LockdownEdition.exe {{$FullBaseDir}}AssaultCube_v1.3.0.2_LockdownEdition.exe.zip > NUL 2>&1",
+	"UpdateSourceArgs": "/C move AssaultCube_v1.3.0.2_LockdownEdition.exe AssaultCube_v1.3.0.2_LockdownEdition.exe.zip",
 	"SkipOnFailure":false
     },
     {
