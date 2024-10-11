@@ -1,0 +1,13 @@
+[
+    {
+        "UpdateStageName": "Downloading Assault Cube from official GitHub repository",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "GithubRelease",
+        "UpdateSourceData": "AssaultCube_v1.3.0.2_LockdownEdition.exe",
+        "UpdateSourceArgs": "https://github.com/assaultcube/AC",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": true
+    }
+]
