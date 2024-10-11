@@ -4,20 +4,9 @@
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "GithubRelease",
         "UpdateSourceData": "AssaultCube_v1.3.0.2_LockdownEdition.exe",
-        "UpdateSourceArgs": "https://github.com/assaultcube/AC",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
-        "OneShot": false
-    },
-    {
-        "UpdateStageName": "Extract files from the installer",
-        "UpdateSourcePlatform": "Windows",
-        "UpdateSource": "ExtractArchive",
-        "UpdateSourceArgs": "AssaultCube_v1.3.0.2_LockdownEdition.exe",
-        "UpdateSourceTarget": "./AssaultCube_v1.3.0.2_LockdownEdition/",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
+        "UpdateSourceArgs": "assaultcube/AC",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true,
         "OneShot": false
     }
