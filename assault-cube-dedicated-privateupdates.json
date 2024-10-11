@@ -15,7 +15,7 @@
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "ExtractArchive",
         "UpdateSourceArgs": "AssaultCube_v1.3.0.2_LockdownEdition.exe",
-        "UpdateSourceTarget": "./AssaultCube_v1.3.0.2_LockdownEdition/",
+        "UpdateSourceTarget": "./server/AssaultCube_v1.3.0.2_LockdownEdition/serverfiles/",
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
