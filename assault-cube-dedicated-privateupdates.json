@@ -14,15 +14,15 @@
 	"UpdateSourcePlatform": "Windows",
 	"UpdateSource": "Executable",
 	"UpdateSourceData": "cmd.exe",
-	"UpdateSourceArgs": "/C move assault-cube-dedicated-private\\AssaultCube_v1.3.0.2_LockdownEdition.exe assault-cube-dedicated-private\\AssaultCube_v1.3.0.2_LockdownEdition.exe.zip",
+	"UpdateSourceArgs": "/C move {{$App.RootDir}}\\AssaultCube_v1.3.0.2_LockdownEdition.exe {{$App.RootDir}}\\AssaultCube_v1.3.0.2_LockdownEdition.exe.zip",
 	"SkipOnFailure":false
     },
     {
         "UpdateStageName": "Extract files from the installer",
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "ExtractArchive",
-        "UpdateSourceData": "assault-cube-dedicated-private\\AssaultCube_v1.3.0.2_LockdownEdition.exe.zip",
-        "UpdateSourceTarget": "assault-cube-dedicated-private\\}",
+        "UpdateSourceData": "{{$App.RootDir}}\\AssaultCube_v1.3.0.2_LockdownEdition.exe.zip",
+        "UpdateSourceTarget": "{{$App.WorkingDir}}",
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true,
         "OneShot": false
