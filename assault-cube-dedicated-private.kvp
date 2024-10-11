@@ -1,8 +1,6 @@
 Meta.DisplayName=Assault Cube Dedicated Private
 Meta.Description=Private Assault Cube Server
-Meta.OS=Windows
 Meta.Arch=x86_64
-Meta.AppConfigId=31213330-971c-4538-aebb-6abb44c3d9d3
 Meta.Author=schallakuchen - Made with AMP Config Generator
 Meta.URL=https://assault.cubers.net/
 Meta.MinAMPVersion=2.4.6.6
